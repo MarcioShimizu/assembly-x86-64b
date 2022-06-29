@@ -3,6 +3,7 @@ num1 DD 30
 num2 DD 70
 num3 DD 99
 soma DD 00
+subt DD 00
 
 SECTION .text
 GLOBAL main
@@ -13,5 +14,6 @@ main:
   ADD EAX, EBX
   MOV [soma], EAX
   SUB EAX, ECX
+  MOV [subt], EAX
   MOV EAX, 0
   RET
